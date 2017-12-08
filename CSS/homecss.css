@@ -1,0 +1,108 @@
+ul 
+{
+	list-style-type: none;
+}
+li
+{
+	display: inline;
+	padding-left: 4em;
+}
+.font
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+a:link
+{
+	color: rgb(51, 0, 0);
+	text-decoration : none;
+}
+a:hover
+{
+	font-weight: bold;
+}
+a:active
+{
+	color: grey;
+}
+.bord
+{
+	border : solid black;
+}
+.nvgt{
+	position:absolute;
+	top: 400px;
+	height: 25px;
+	width: 22px;
+	opacity: 0.6;
+}
+.nvgt:hover{
+	opacity: 0.9;
+}
+.btn {
+  	background: #147fc7;
+  	-webkit-border-radius: 28;
+  	-moz-border-radius: 28;
+  	border-radius: 28px;
+  	font-family:"Comic Sans MS", cursive, sans-serif;
+  	color: #ffffff;
+  	font-size: 15px;
+  	padding: 10px 20px 10px 20px;
+  	text-decoration: none;
+  	transition: 0.6s;
+  	transform-style: preserve-3d;
+  
+}
+
+.btn:hover {
+  	background: #ff3300;
+  	text-decoration: none;
+  	cursor:hand;
+  	transform: rotateX(360deg);
+}
+.tile {
+	width : 200px;
+	height : 200px;
+	transition: 0.6s;
+  	transform-style: preserve-3d;
+  	z-index : 0;
+}
+.tile:hover {
+	opacity : 0.2;
+	transform: rotateY(180deg);
+	z-index : 0;
+}
+.tilefont {
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: bold;
+}
+.rightseg
+{
+	float: right;
+	font-size: 14px;
+    	line-height: 20px;
+    	width: 30%;
+    	padding: 0 1% 0 1%;
+    	vertical-align: top;
+    	margin-bottom: 50px;
+}
+.leftbord
+{
+	border-left: solid grey 1px;
+}
+@font-face {
+  	font-family: 'Rancho';
+  	src: local("Rancho"), url(http://fonts.gstatic.com/s/rancho/v6/S-YcqhLwgYWxIA-a7eDp2g.woff2) format('woff2');
+  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  	font-family: 'Raleway';
+  	src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+.tilecap {
+  	text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+  	-webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+  	font-family: 'Rancho';
+  	font-size: 30px;
+}

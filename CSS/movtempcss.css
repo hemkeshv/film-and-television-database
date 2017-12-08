@@ -1,0 +1,222 @@
+ul 
+{
+	list-style-type: none;
+ 	margin: 0;
+	padding: 0;
+}
+li
+{
+	display: inline;
+	padding-left: 4em;
+}
+.font
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+a:link
+{
+	color: rgb(51, 0, 0);
+	text-decoration : none;
+}
+a:hover
+{
+	font-weight: bold;
+}
+a:active
+{
+	color: grey;
+}
+.bord
+{
+	border : solid black;
+}
+.nvgt{
+	position:absolute;
+	top: 360px;
+	height: 40px;
+	width: 30px;
+	opacity: 0.6;
+}
+.nvgt:hover{
+	opacity: 0.9;
+}
+
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    display: none;
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: &#9733;
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+.head
+{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 50px;
+	color: #ff3300;
+}
+.md
+{
+	font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 20px;
+	text-align: justify;
+	
+}
+.head2
+{
+	font-size: 24px;
+	font-family: 'Palatino Linotype';
+	color: #147fc7;
+}
+.head3
+{
+	font-size: 24px;
+	font-family: 'Palatino Linotype';
+	color: #ff3300;
+}
+.col1
+{
+	color : #ff3300;
+}
+.col2
+{
+	color : #147fc7;
+}
+.fs
+{
+	border-color : #147fc7;
+}
+.rightseg
+{
+	float: right;
+	font-size: 14px;
+    	line-height: 20px;
+    	width: 40%;
+    	padding: 0 1% 0 1%;
+    	vertical-align: top;
+    	margin-bottom: 50px;
+}
+.leftbord
+{
+	border-left: solid grey 1px;
+}
+.btn {
+  	background: #147fc7;
+  	-webkit-border-radius: 28;
+  	-moz-border-radius: 28;
+  	border-radius: 28px;
+  	font-family:"Comic Sans MS", cursive, sans-serif;
+  	color: #ffffff;
+  	font-size: 15px;
+  	padding: 10px 20px 10px 20px;
+  	text-decoration: none;
+  	transition: 0.6s;
+  	transform-style: preserve-3d;
+  
+}
+.btn2 {
+  	background: #147fc7;
+  	-webkit-border-radius: 12;
+  	-moz-border-radius: 12;
+  	border-radius: 12px;
+  	font-family:"Comic Sans MS", cursive, sans-serif;
+  	color: #ffffff;
+  	font-size: 12px;
+  	padding: 10px 20px 10px 20px;
+  	text-decoration: none;
+  	transition: 0.1s;
+  	transform-style: preserve-3d;
+  
+}
+.btn2:hover {
+  	background: #ff3300;
+  	text-decoration: none;
+  	cursor:hand;
+  	transform: rotateX(360deg);
+}
+.small {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 30px;
+	color: #ff3300;
+}
+
+.btn:hover {
+  	background: #ff3300;
+  	text-decoration: none;
+  	cursor:hand;
+  	transform: rotateX(360deg);
+}
+.orangeBorder{
+	border-width:5;
+	border-style:solid;
+	border-color:#ff3300;
+}
+.html-text-box {
+    	top:20px;
+	left:100px;
+	background-color:#ffffff;
+	border-width:5;
+	border-style:solid;
+	border-color:#147fc7;
+	font-family:'Exo 2', sans-serif;;
+	font-size:13pt;
+	color:#000000;
+}
+.comments {
+	font-family:'Exo 2', sans-serif;
+}
+.commentName {
+	font-family:'Exo 2', sans-serif;
+	color: #147fc7;
+	font-weight: bold;
+}
+.myName {
+	font-family:'Exo 2', sans-serif;
+	color: #ff3300;
+	font-weight: bold;
+}		
